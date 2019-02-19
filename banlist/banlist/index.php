@@ -50,7 +50,7 @@ while( $row = $resault->fetch(PDO::FETCH_ASSOC) ){
 	</tr>";
 }
 
-#	Вывод банлиста
+#	Вывод таблицы банлиста
 echo "$banlist";
 ?>
 
