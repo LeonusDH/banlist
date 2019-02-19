@@ -37,7 +37,7 @@ $banlist .= "
 
 #	Добавление в структуру банлиcта полей с заблокированными пользователями из базы
 while( $row = $resault->fetch(PDO::FETCH_ASSOC) ){
-	if( !$row['temptime'] ) $unban = "<span style='color: $perm_color;>Перманентно</span>"; else $unban = date("d.m.Y H:i", $row['temptime']);
+	if( !$row['temptime'] ) $unban = "<span style='color': $perm_color;>Перманентно</span>"; else $unban = date("d.m.Y H:i", $row['temptime']);
 	$time = date("d.m.Y H:i", $row['time']);
 	$nickname = $row['name'];
 	$banlist .= "
